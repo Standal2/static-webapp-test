@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './App.css';
 
 function App() {
   const [msg, setMsg] = useState("");
@@ -10,7 +11,12 @@ function App() {
       .catch(console.error);
   }, []);
   const value = 'World';
-  return <div>Hello {value} <p>{msg}</p> </div>;
+  return (<div> 
+          <div className="card">
+          Hello {value}
+          <p>{msg}</p> 
+          </div>
+  );
 }
 
 
