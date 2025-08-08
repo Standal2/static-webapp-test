@@ -11,12 +11,12 @@ function App() {
       .catch(console.error);
   }, []);
   const value = 'World';
-  return (<div> 
-          <div className="card">
-          Hello {value}
-          <p>{msg}</p> 
-          </div>);
-}
+  return (
+    <div className="card">
+      <h1>Hello {value}</h1>
+      <p>{msg}</p> 
+    </div>)
+  };
 
 
 export default App;
