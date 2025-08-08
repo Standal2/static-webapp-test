@@ -11,11 +11,11 @@ function App() {
       .catch(console.error);
   }, []);
   const value = 'World';
-  return <div> 
+  return (<div> 
           <div className="card">
           Hello {value}
           <p>{msg}</p> 
-          </div>;
+          </div>);
 }
 
 
