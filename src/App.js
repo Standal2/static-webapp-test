@@ -10,8 +10,7 @@ function App() {
       .catch(console.error);
   }, []);
   const value = 'World';
-  return <div>Hello {value}</div>;
-  <p>{msg}</p>
+  return <div>Hello {value} <p>{msg}</p> </div>;
 }
 
 
